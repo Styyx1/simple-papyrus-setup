@@ -2,13 +2,21 @@
   "name": "simple-papyrus-setup",
   "displayName": "simple-papyrus-setup",
   "description": "Set up a simple Papyrus project and VS Code task on Linux.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
-    "vscode": "^1.138.0"
+    "vscode": "^1.135.0"
+  },
+  "author": {
+    "name": "styyx",
+    "url": "https://github.com/Styyx1"
   },
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/Styyx1/simple-papyrus-setup.git"
+  },
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
@@ -39,8 +47,6 @@
     ]
   },
 
-
-
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -50,7 +56,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.138.0",
+    "@types/vscode": "^1.135.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "24.x",
     "typescript-eslint": "^8.61.1",

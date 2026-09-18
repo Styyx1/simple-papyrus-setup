@@ -1,20 +1,20 @@
 <?xml version='1.0'?>
-<PapyrusProject xmlns="PapyrusProject.xsd" 
-    Flags="TESV_Papyrus_Flags.flg" 
+<PapyrusProject xmlns="PapyrusProject.xsd"
+    Flags="TESV_Papyrus_Flags.flg"
     Game="sse"
-    Anonymize="true" 
-    Output="Scripts" 
-    Optimize="false" 
-    Release="false" 
+    Anonymize="true"
+    Output="./Scripts"
+    Optimize="false"
+    Release="false"
     Zip="false"
     Package="false"
     Final="false">
     <Variables>
-        <Variable Name="ModsFolder", Value="PATH_TO_MODS"/>
+        <Variable Name="ModsFolder" Value="PATH_TO_MODS_FOLDER" />
     </Variables>
     <Imports>
-        <!-- <Import>@ModsFolder\SKSE64\Scripts\Source</Import> -->
-        <Import>YOUR_CREATION_KIT_INSTALL_WITH_UNPACKED_SCRIPTZIP/Data/Source/Scripts</Import>
+        <!-- <Import>@ModsFolder/SKSE64/Scripts/Source</Import> -->        
+        <Import>PATH_TO_VANILLA_SOURCE_FILES_CONTAINING_FLG_FILE</Import>
     </Imports>
     <Folders>
         <!-- Relative path to folder containing .psc Papyrus source code files for this project -->

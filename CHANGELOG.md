@@ -1,9 +1,11 @@
 # Change Log
 
-All notable changes to the "simple-papyrus-setup" extension will be documented in this file.
+## 1.0.1
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- better ppj template
+- added author data
+- changed vscode version to work with codium
 
-## [Unreleased]
+## 1.0.0
 
-- Initial release
+- initial release
