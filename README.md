@@ -12,7 +12,7 @@ This is a small VS Code Extension for setting up Papyrus scripting projects on L
 ## Requirements
 
 - VS Code/VS Codium
-- Caprica (can be found [in this github repo](https://github.com/Styyx1/Caprica) for Linux)
+- Caprica (can be found [in this github repo](https://github.com/Styyx1/Caprica/releases/tag/1.0.0-linux) for Linux)
 - A Skyrim mod directory (no matter the mod manager, but it needs to be a mod manager that separates mods into folders)
 
 ## First-time setup

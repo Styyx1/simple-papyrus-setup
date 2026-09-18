@@ -10,11 +10,12 @@
     Package="false"
     Final="false">
     <Variables>
-        <Variable Name="ModsFolder" Value="PATH_TO_MODS_FOLDER" />
+        <Variable Name="ModsFolder" Value="PATH_TO_MODS" />
     </Variables>
+    <!-- Import conflicts are solved like this: TOP overwrites BOTTOM -->
     <Imports>
-        <!-- <Import>@ModsFolder/SKSE64/Scripts/Source</Import> -->        
-        <Import>PATH_TO_VANILLA_SOURCE_FILES_CONTAINING_FLG_FILE</Import>
+        <!-- <Import>@ModsFolder/Skyrim Script Extender (SKSE64)  Steam/Scripts/Source/</Import> -->
+        <Import>PATH_TO_VANILLA_SOURCES_CONTAINING_FLG_FILE</Import>
     </Imports>
     <Folders>
         <!-- Relative path to folder containing .psc Papyrus source code files for this project -->
