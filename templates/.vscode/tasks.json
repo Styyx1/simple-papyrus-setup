@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Papyrus: Build",
+            "type": "shell",
+            
+            "command": "${config:papyrus-starter.compilerPath}",
+            "args": [
+                "${workspaceFolder}/project.ppj"
+            ],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": [],
+            "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+        }
+    ]
+}

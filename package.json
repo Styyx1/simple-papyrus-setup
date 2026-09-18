@@ -1,0 +1,66 @@
+{
+  "name": "simple-papyrus-setup",
+  "displayName": "simple-papyrus-setup",
+  "description": "Set up a simple Papyrus project and VS Code task on Linux.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.138.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+            "title": "Papyrus Starter",
+            "properties": {
+                "papyrus-starter.modsPath": {
+                    "type": "string",
+                    "description": "Path to the Skyrim mods directory.",
+                    "default": "/mnt/devnvme/Amethyst/staging/ModMaking/profiles/ASSOSDev/mods"
+                },
+                "papyrus-starter.compilerPath": {
+                    "type": "string",
+                    "description": "Path to the Papyrus compiler.",
+                    "default": "/home/styyx/.local/bin/caprica"
+                }              
+            }
+        },
+    "commands": [
+      {
+        "command": "simple-papyrus-setup.setup",
+        "title": "Papyrus: Setup Project"
+      },
+      {
+        "command": "simple-papyrus-setup.openTemplates",
+        "title": "Papyrus: Open Template Folder"
+      }
+    ]
+  },
+
+
+
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.138.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "typescript-eslint": "^8.61.1",
+    "eslint": "^10.5.0",
+    "typescript": "^6.0.3",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  }
+}
